@@ -4,7 +4,7 @@ class CreateAlbum < ActiveRecord::Migration[6.1]
       t.integer :release_year
       t.string :album_name
       t.string :album_cover
-      t.integer :artist_id
+      t.string :artist_id
 
     end
   end

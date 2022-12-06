@@ -3,15 +3,12 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-    { 
-      message: "Good luck with your project!",
-    
-    }.to_json
+      artists = Artist.all
+      artists.to_json
+      
   end
-  get '/working' do
-    { 
-      message: "this message is from backend" 
-    }.to_json
+  get '/albums' do
+      
   end
 
 end
