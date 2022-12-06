@@ -3,8 +3,8 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-      artists = Artist.all
-      artists.to_json
+      albums = Album.all
+      albums.to_json
       
   end
   get '/albums' do

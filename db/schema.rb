@@ -16,7 +16,8 @@ ActiveRecord::Schema.define(version: 2022_12_06_160156) do
     t.integer "release_year"
     t.string "album_name"
     t.string "album_cover"
-    t.integer "artist_id"
+    t.string "artist_id"
+    t.string "artist_name"
   end
 
   create_table "artists", force: :cascade do |t|
