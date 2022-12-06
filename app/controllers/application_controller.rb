@@ -5,5 +5,8 @@ class ApplicationController < Sinatra::Base
   get "/" do
     { message: "Good luck with your project!" }.to_json
   end
+  get '/working' do
+    { message: "this message is from backend" }.to_json
+  end
 
 end
