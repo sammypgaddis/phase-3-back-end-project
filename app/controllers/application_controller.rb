@@ -3,12 +3,16 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-      albums = Album.all
-      albums.to_json
+      # albums = Album.all
+      # albums.to_json
       
   end
   get '/albums' do
-      
+    albums = Album.all
+    albums.to_json
+  end
+  post '/newalbums' do
+    
   end
 
 end
