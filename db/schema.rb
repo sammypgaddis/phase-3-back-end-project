@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2022_12_06_160156) do
     t.string "album_cover"
     t.string "artist_id"
     t.string "artist_name"
+    t.string "song_cover"
   end
 
   create_table "artists", force: :cascade do |t|

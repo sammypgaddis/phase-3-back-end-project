@@ -6,6 +6,7 @@ class CreateAlbum < ActiveRecord::Migration[6.1]
       t.string :album_cover
       t.string :artist_id
       t.string :artist_name
+      t.string :song_cover
 
     end
   end
