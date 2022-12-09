@@ -5,6 +5,8 @@ class ApplicationController < Sinatra::Base
   get "/artist" do
     songs = Artist.all
     songs.to_json
+
+
   end
 
   post "/artist" do
@@ -21,7 +23,15 @@ class ApplicationController < Sinatra::Base
   
   get '/albums' do
     albums = Album.all
-    albums.to_json
+    # 1st way to get artists by id:
+
+    # albums_with_artist = albums.map do |t|
+    #   {album: t, artist: t.artist}
+    # end
+
+    # 2nd way to get artists:
+    
+    # albums.to_json(include: :artist)
   end
 
   post '/newalbums' do
